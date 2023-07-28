@@ -49,13 +49,12 @@
         twitterDescription: "Kirousek's Shop",
         twitterCard: 'summary'
     })
-    async function pay(pId: string) {
+    async function pay(priceId: string) {
         const res = await fetch('/api/checkout-create', {
             method: 'POST',
-            body: pId
+            body: priceId
         })
-        const data = await res.json()
-        console.log(data)
-        window.open(data.url, '_blank')
+        const body = await res.json()
+        window.open(body.url, '_blank')
     }
 </script>
