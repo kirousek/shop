@@ -50,7 +50,7 @@
         twitterCard: 'summary'
     })
     async function pay(pId: string) {
-        const res = await fetch('http://api.kirousek.eu/checkout/create', {
+        const res = await fetch('/api/checkout-create', {
             method: 'POST',
             body: pId
         })

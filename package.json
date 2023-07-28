@@ -14,5 +14,8 @@
     "@types/node": "^18.17.0",
     "nuxt": "^3.6.5",
     "nuxt-typed-router": "^3.2.5"
+  },
+  "dependencies": {
+    "stripe": "^12.16.0"
   }
 }
