@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
             }
         ],
         mode: 'subscription',
-        payment_method_types: ['card', 'sepa_debit'],
+        payment_method_types: ['card'],
         allow_promotion_codes: true,
         success_url: `${url}/checkout/success`,
         cancel_url: `${url}/checkout/cancel`,
