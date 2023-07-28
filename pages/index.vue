@@ -41,7 +41,7 @@
   })
 
   async function pay(pId: string) {
-    const res = await fetch('http://localhost:3030/checkout/create', {
+    const res = await fetch('http://api.kirousek.eu/checkout/create', {
       method: 'POST',
       body: pId
     })
