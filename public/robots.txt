@@ -1,0 +1,4 @@
+user-agent: *
+crawl-delay: 5
+disallow: /api/
+sitemap: https://shop.kirousek.eu/sitemap.xml
