@@ -2,17 +2,18 @@
     <nav class='sticky top-0 m-1 z-10 backdrop-blur-xl'>
         <div class='flex justify-between items-center'>
             <div class='flex m-1.5'>
-                <NuxtLink to='/' class='font-bold lg:text-xl text-2xl text-green-500 dark:text-green-400'>
+                <NuxtLink to='/' class='font-bold lg:text-xl text-2xl text-green-500 dark:text-green-400' aria-label='Home'>
                     <img 
                         src='/logo-transparent.png' 
                         width='45'
                         height='45'
+                        alt='Logo'
                     />
                 </NuxtLink>
             </div>
             <div class='flex lg:hidden mx-3'>
                 <UDropdown :items='menuItems'>
-                    <UButton variant='ghost' icon='i-heroicons-bars-3' />
+                    <UButton variant='ghost' icon='i-heroicons-bars-3' aria-label='Menu' />
                     <template #item='{ item }'>
                         <span class='truncate'>{{ item.label }}</span>
                         <UIcon :name='item.icon' class='flex-shrink-0 h-4 w-4 text-gray-400 dark:text-gray-500 ms-auto' />

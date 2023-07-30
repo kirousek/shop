@@ -7,7 +7,7 @@
   </UContainer>
   <LazyUContainer class='flex justify-center items-center m-20 cursor-default'>
     <div class='flex flex-col justify-center text-center items-center'>
-      <h3 class='lg:text-5xl font-bold text-3xl'>Products</h3>
+      <h2 class='lg:text-5xl font-bold text-3xl'>Products</h2>
       <div class='flex justify-center items-center'>
         <LazyUCard class='flex flex-col justify-center items-center m-10'>
           <div class='flex flex-col justify-center items-center'>
@@ -19,7 +19,7 @@
         </LazyUCard>
         
       </div>
-      <UButton label='More' icon='i-heroicons-squares-plus' variant='ghost' to='/products' />
+      <UButton label='Find More' icon='i-heroicons-squares-plus' variant='ghost' to='/products' />
     </div>
   </LazyUContainer>
 </template>
